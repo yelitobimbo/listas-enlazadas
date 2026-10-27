@@ -13,7 +13,11 @@ public class Nodo {
     // puntero o referencia que apunta al siguiente nodo en la lista
     Nodo siguiente;
 
-    // constructor que recibe el carácter al momento de crear el nodo
+    /**
+     * Crea un nodo que guarda una letra. Al inicio no apunta a ningún otro nodo.
+     *
+     * @param dato letra que se guarda en el nodo
+     */
     public Nodo(char dato) {
         this.dato = dato;       // Asignamos el carácter recibido
         this.siguiente = null;  // Al inicio no apunta a ningún otro nodo

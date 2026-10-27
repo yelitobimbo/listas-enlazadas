@@ -10,12 +10,18 @@ public class ListaSimple {
   // apuntador al primer nodo de nuestra lista
     Nodo cabeza;
 
-    // constructor que inicia la lista completamente vacía
+    /**
+     * Crea una lista enlazada simple vacía.
+     */
     public ListaSimple() {
         this.cabeza = null;
     }
 
-    // metodo para agregar un nuevo carácter al final de la lista
+    /**
+     * Agrega una letra al final de la lista.
+     *
+     * @param dato letra que se va a agregar
+     */
     public void agregar(char dato) {
         Nodo nuevo = new Nodo(dato); // Creación del nuevo nodo
         
@@ -33,7 +39,12 @@ public class ListaSimple {
         }
     }
 
-  // metodo que recorre la lista y cuenta cuántas veces aparece una letra
+    /**
+     * Recorre la lista y cuenta cuántas veces aparece una letra.
+     *
+     * @param letra letra que se quiere contar
+     * @return cantidad de veces que aparece la letra en la lista
+     */
     public int contarLetra(char letra) {
         int contador = 0;   // Inicia el contador en cero
         Nodo actual = cabeza; // Empezamos a contar desde la cabeza

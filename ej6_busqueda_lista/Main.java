@@ -9,6 +9,11 @@ import java.util.Scanner;
 */
 
 public class Main {
+    /**
+     * Lee las cajas de dulces, las guarda en la lista e imprime la suma máxima de k cajas juntas.
+     *
+     * @param args argumentos de la línea de comandos (no se usan)
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ListaSimple lista = new ListaSimple();

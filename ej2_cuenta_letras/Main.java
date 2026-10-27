@@ -9,6 +9,11 @@ import java.util.Scanner;
 */
 
 public class Main {
+    /**
+     * Lee una palabra, la guarda en la lista e imprime cuántas veces aparece cada letra del alfabeto.
+     *
+     * @param args argumentos de la línea de comandos (no se usan)
+     */
     public static void main(String[] args) {
     // creamos el Scanner para leer la entrada desde la consola
         Scanner scanner = new Scanner(System.in);

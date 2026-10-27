@@ -9,6 +9,11 @@ import java.util.Scanner;
 */
 
 public class Main {
+    /**
+     * Lee dos listas ordenadas, las mezcla, las invierte e imprime el resultado de mayor a menor.
+     *
+     * @param args argumentos de la línea de comandos (no se usan)
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ListaSimple lista1 = new ListaSimple();

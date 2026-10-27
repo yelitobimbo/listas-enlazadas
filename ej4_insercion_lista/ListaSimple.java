@@ -10,12 +10,18 @@ public class ListaSimple {
     // apuntador principal al inicio de la lista
     Nodo cabeza;
 
-   // constructor que inicializa la lista vacía
+    /**
+     * Crea una lista enlazada simple vacía.
+     */
     public ListaSimple() {
         this.cabeza = null;
     }
 
-    // metodo para insertar un numero al final de la lista
+    /**
+     * Inserta un número al final de la lista.
+     *
+     * @param dato número que se va a insertar
+     */
     public void insertar(int dato) {
         Nodo nuevo = new Nodo(dato); // Creamos el nuevo nodo con su valor
         
@@ -33,8 +39,11 @@ public class ListaSimple {
         }
     }
 
-    // metodo que inserta un nodo con -1 antes de cada nodo con numero impar
-    // regresa cuantos nodos inserto
+    /**
+     * Mete un nodo con -1 antes de cada nodo que tenga un número impar.
+     *
+     * @return cantidad de nodos con -1 que se insertaron
+     */
     public int insertarAntesDeImpares() {
         int insertados = 0;     // contador de nodos nuevos
         Nodo anterior = null;   // nodo que va antes del actual
@@ -60,7 +69,9 @@ public class ListaSimple {
         return insertados;
     }
 
-    // metodo para recorrer la lista e imprimirla con el formato 1 -> 2 -> NULL
+    /**
+     * Recorre la lista e imprime sus elementos con el formato 1 -> 2 -> NULL.
+     */
     public void mostrar() {
         Nodo actual = cabeza; // Comenzamos el recorrido desde la cabeza
         

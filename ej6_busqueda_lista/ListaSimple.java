@@ -10,12 +10,18 @@ public class ListaSimple {
    // apuntador al inicio de la lista
     Nodo cabeza;
 
-    // constructor que inicializa la lista vacía
+    /**
+     * Crea una lista enlazada simple vacía.
+     */
     public ListaSimple() {
         this.cabeza = null;
     }
 
-  // metodo para insertar elementos al final de la lista
+    /**
+     * Inserta un número al final de la lista.
+     *
+     * @param dato número que se va a insertar
+     */
     public void insertar(int dato) {
         Nodo nuevo = new Nodo(dato);
         if (cabeza == null) {
@@ -29,7 +35,12 @@ public class ListaSimple {
         }
     }
 
-    // metodo para buscar la suma mas grande que se puede hacer con k nodos seguidos
+    /**
+     * Busca la suma más grande que se puede hacer con k nodos seguidos de la lista.
+     *
+     * @param k cantidad de nodos seguidos que se suman
+     * @return la suma máxima encontrada
+     */
     public int buscarSumaMaxima(int k) {
         int maxima = 0;         // la mejor suma que hemos encontrado
         Nodo inicio = cabeza;   // desde que nodo empezamos a sumar

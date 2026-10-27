@@ -9,6 +9,11 @@ import java.util.Scanner;
 */
 
 public class Main {
+    /**
+     * Lee los números hasta el final de los datos, los inserta, agrega un -1 antes de cada impar e imprime el resultado.
+     *
+     * @param args argumentos de la línea de comandos (no se usan)
+     */
     public static void main(String[] args) {
       // creamos el objeto Scanner para leer desde la consola
         Scanner scanner = new Scanner(System.in);

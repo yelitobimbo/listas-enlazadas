@@ -9,11 +9,18 @@
 public class ListaSimple {
     Nodo cabeza;
 
+    /**
+     * Crea una lista enlazada simple vacía.
+     */
     public ListaSimple() {
         this.cabeza = null;
     }
 
-    // metodo para insertar elementos al final de la lista
+    /**
+     * Inserta un número al final de la lista.
+     *
+     * @param dato número que se va a insertar
+     */
     public void insertar(int dato) {
         Nodo nuevo = new Nodo(dato);
         if (cabeza == null) {
@@ -27,8 +34,12 @@ public class ListaSimple {
         }
     }
 
-    // metodo para mezclar esta lista con otra (las dos ya vienen ordenadas de menor a mayor)
-    // regresa una lista nueva con todos los numeros tambien de menor a mayor
+    /**
+     * Mezcla esta lista con otra. Las dos deben venir ordenadas de menor a mayor.
+     *
+     * @param otra segunda lista ordenada
+     * @return una lista nueva con todos los números, ordenados de menor a mayor
+     */
     public ListaSimple mezclarCon(ListaSimple otra) {
         ListaSimple resultado = new ListaSimple();
         Nodo p = this.cabeza;   // recorre la primera lista
@@ -58,7 +69,9 @@ public class ListaSimple {
         return resultado;
     }
 
-    // metodo para invertir los apuntadores de la lista enlazada
+    /**
+     * Invierte la lista cambiando hacia dónde apunta el puntero siguiente de cada nodo.
+     */
     public void invertir() {
         Nodo anterior = null;
         Nodo actual = cabeza;
@@ -75,7 +88,9 @@ public class ListaSimple {
         cabeza = anterior;
     }
 
-    // metodo para mostrar todos los elementos de la lista separados por espacio
+    /**
+     * Recorre la lista e imprime sus elementos separados por un espacio.
+     */
     public void mostrar() {
         Nodo actual = cabeza;
         while (actual != null) {

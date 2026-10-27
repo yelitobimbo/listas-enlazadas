@@ -13,7 +13,11 @@ public class Nodo {
     // Apuntador al siguiente nodo de la lista
     Nodo siguiente;
 
-    // Constructor para inicializar el nodo con un valor
+    /**
+     * Crea un nodo que guarda un número entero. Al inicio no apunta a ningún otro nodo.
+     *
+     * @param dato número que se guarda en el nodo
+     */
     public Nodo(int dato) {
         this.dato = dato;
         this.siguiente = null;
